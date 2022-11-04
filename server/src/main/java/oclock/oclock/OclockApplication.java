@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class OclockApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(OclockApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(OclockApplication.class, args);
+    }
 
 }
