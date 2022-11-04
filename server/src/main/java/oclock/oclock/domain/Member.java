@@ -1,9 +1,26 @@
 package oclock.oclock.domain;
 
+import lombok.*;
+
+import javax.persistence.*;
+
+@Entity
+@Getter
+@ToString
+@Table(name = "member")
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Member {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private String email;
+    @Column
     private String password;
+    @Column
     private String name;
 
     public Long getId() {
