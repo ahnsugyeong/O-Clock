@@ -3,6 +3,7 @@ package oclock.oclock.domain;
 public class Member {
     private Long id;
     private String email;
+    private String password;
     private String name;
 
     public Long getId() {
@@ -21,14 +22,6 @@ public class Member {
         this.email = email;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -37,5 +30,11 @@ public class Member {
         this.password = password;
     }
 
-    private String password;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
