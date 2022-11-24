@@ -11,7 +11,7 @@ public class MainController {
     // 안드로이드 요청(id, pw 받아서 db연동)
     @RequestMapping(value= "/android", method = {RequestMethod.POST})
     public String androidPage(HttpServletRequest request, Model model) {
-        System.out.println("서버에서 안드로이드 접속 요청함");
+        System.out.println("server에서 client 접속 요청함");
         try{
             String androidID = request.getParameter("id");
             String androidPW = request.getParameter("pw");
